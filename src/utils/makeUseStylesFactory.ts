@@ -49,7 +49,7 @@ type DynamicStylesDefinitionType =
 type StylesDefinitionArgs = StylesDefinitionType | DynamicStylesDefinitionType;
 
 type UseStylesType = (
-  definition: StylesDefinitionArgs,
+  definition?: StylesDefinitionArgs,
 ) => StyleDefinitionObject;
 
 type MakeUseStylesType = (theme: any) => UseStylesType;
@@ -92,7 +92,7 @@ const makeUseStylesFactory = <T extends {}>(
     stylesDefinitions: StylesDefinitionArgs,
   ): UseStylesType => {
     if (typeof stylesDefinitions === 'function') {
-      return (args: any): StyleDefinitionObject => {
+      return (args?: any): StyleDefinitionObject => {
         const theme = React.useContext(Context);
         return React.useMemo(() => {
           const computedStyle = computeDynamicStylesFromFunction(
@@ -104,7 +104,7 @@ const makeUseStylesFactory = <T extends {}>(
         }, [args, theme]);
       };
     } else if (typeof stylesDefinitions === 'object') {
-      return (args: any): StyleDefinitionObject => {
+      return (args?: any): StyleDefinitionObject => {
         const computedStyle = computeDynamicStylesFromObject(
           stylesDefinitions,
           args,

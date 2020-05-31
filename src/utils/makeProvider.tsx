@@ -14,8 +14,8 @@ type ProviderType<T> = React.SFC<ProviderProps<T>>;
 
 // COMPONENT
 const makeProvider = <T extends {}>(
-  initialTheme: T,
   Context: React.Context<T>,
+  initialTheme: T,
 ): ProviderType<T> => {
   const Component: ProviderType<T> = (props: ProviderProps<T>) => (
     <Context.Provider value={props.theme || initialTheme}>
