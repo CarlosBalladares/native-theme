@@ -8,7 +8,7 @@ const Context = React.createContext({theme: 'initial'});
 test('Make Provider Creates a Valid React Context', () => {
   const expected = '123';
   const Provider = makeProvider(Context, {theme: expected});
-  const Component = renderer.create(
+  const component = renderer.create(
     <Provider>
       <Context.Consumer>
         {(props) => (
@@ -19,7 +19,6 @@ test('Make Provider Creates a Valid React Context', () => {
       </Context.Consumer>
     </Provider>,
   );
-  var json: any = Component.toJSON();
-  expect(json.type).toEqual('div');
-  expect(json.children[0]).toEqual(expected);
+  const el = component.root.findByType(Text);
+  expect(el.props.children).toBe(expected);
 });

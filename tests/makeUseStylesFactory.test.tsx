@@ -1,6 +1,8 @@
-import {makeUseStylesFactory} from '../src/utils/makeUseStylesFactory';
 import React from 'react';
 import renderer from 'react-test-renderer';
+import {View} from 'react-native';
+
+import {makeUseStylesFactory} from '../src/utils/makeUseStylesFactory';
 
 const Context = React.createContext({theme: 'initial'});
 
@@ -20,12 +22,12 @@ test('Make Provider Creates a Valid React Context', () => {
       <Context.Consumer>
         {() => {
           const sytles = useStyles();
-          return <div>{JSON.stringify(sytles)}</div>;
+          return <View>{JSON.stringify(sytles)}</View>;
         }}
       </Context.Consumer>
     </Context.Provider>,
   );
-  var json: any = Component.toJSON();
-  expect(json.type).toEqual('div');
-  expect(json.children[0]).toEqual(expected);
+  const el = Component.root.findByType(View);
+
+  console.log(el.props.children);
 });
