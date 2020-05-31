@@ -1,4 +1,4 @@
-<img src="assets/cb-native-theme.png">
+<img src="assets/cb-native-theme2.png">
 <hr/>
 
 <img src="https://github.com/indigo-org/native-theme/workflows/CI/badge.svg">
