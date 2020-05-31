@@ -1,8 +1,7 @@
-<img src="assets/cb-native-theme2.png">
+<img src="https://raw.githubusercontent.com/CarlosBalladares/native-theme/master/assets/cb-native-theme2.png?token=ADRAE2G4MBHKDEGSP27B2ZC63UWOU">
 <hr/>
 
-<img src="https://github.com/carlosballadares/native-theme/workflows/CI/badge.svg">
-<img src="https://img.shields.io/apm/l/native-theme">
+<img src="https://github.com/carlosballadares/native-theme/workflows/CI/badge.svg"><img src="https://img.shields.io/apm/l/native-theme">
 
 # @indigo/native-theme
 

@@ -23,7 +23,7 @@
 
 • **children**: *React.ReactNode*
 
-*Defined in [utils/makeProvider.tsx:10](https://github.com/indigo-org/native-theme/blob/1f1a57d/src/utils/makeProvider.tsx#L10)*
+*Defined in [utils/makeProvider.tsx:10](https://github.com/CarlosBalladares/native-theme/blob/c9088b7/src/utils/makeProvider.tsx#L10)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **theme**? : *T*
 
-*Defined in [utils/makeProvider.tsx:11](https://github.com/indigo-org/native-theme/blob/1f1a57d/src/utils/makeProvider.tsx#L11)*
+*Defined in [utils/makeProvider.tsx:11](https://github.com/CarlosBalladares/native-theme/blob/c9088b7/src/utils/makeProvider.tsx#L11)*
