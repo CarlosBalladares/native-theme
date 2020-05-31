@@ -17,7 +17,7 @@
 
 • **ThemeContext**: *any*
 
-*Defined in [index.ts:2](https://github.com/CarlosBalladares/native-theme/blob/c9088b7/src/index.ts#L2)*
+*Defined in [index.ts:2](https://github.com/CarlosBalladares/native-theme/blob/f352f73/src/index.ts#L2)*
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **ThemeProvider**: *any*
 
-*Defined in [index.ts:2](https://github.com/CarlosBalladares/native-theme/blob/c9088b7/src/index.ts#L2)*
+*Defined in [index.ts:2](https://github.com/CarlosBalladares/native-theme/blob/f352f73/src/index.ts#L2)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **useTheme**: *any*
 
-*Defined in [index.ts:2](https://github.com/CarlosBalladares/native-theme/blob/c9088b7/src/index.ts#L2)*
+*Defined in [index.ts:2](https://github.com/CarlosBalladares/native-theme/blob/f352f73/src/index.ts#L2)*
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **withTheme**: *any*
 
-*Defined in [index.ts:2](https://github.com/CarlosBalladares/native-theme/blob/c9088b7/src/index.ts#L2)*
+*Defined in [index.ts:2](https://github.com/CarlosBalladares/native-theme/blob/f352f73/src/index.ts#L2)*

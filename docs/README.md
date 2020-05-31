@@ -2,12 +2,12 @@
 
 # native-theme
 
-<img src="assets/cb-native-theme2.png">
+<img src="https://raw.githubusercontent.com/CarlosBalladares/native-theme/master/assets/cb-native-theme2.png?token=ADRAE2G4MBHKDEGSP27B2ZC63UWOU">
 <hr/>
 
 <img src="https://github.com/carlosballadares/native-theme/workflows/CI/badge.svg"><img src="https://img.shields.io/apm/l/native-theme">
 
-# @indigo/native-theme
+# native-theme
 
 A small library that provides a set of utilities to create react native stylesheets intuitively, inspired by `react-jss` and `@material-ui/styles`.
 
