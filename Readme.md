@@ -2,7 +2,7 @@
 <hr/>
 
 <img src="https://github.com/carlosballadares/native-theme/workflows/CI/badge.svg">
-<img src="https://img.shields.io/apm/l/@indigo/native-theme">
+<img src="https://img.shields.io/apm/l/native-theme">
 
 # @indigo/native-theme
 
