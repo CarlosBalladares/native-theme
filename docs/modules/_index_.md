@@ -17,7 +17,7 @@
 
 • **ThemeContext**: *any*
 
-*Defined in [index.ts:2](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/index.ts#L2)*
+*Defined in [index.ts:2](https://github.com/indigo-org/native-theme/blob/1f1a57d/src/index.ts#L2)*
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **ThemeProvider**: *any*
 
-*Defined in [index.ts:2](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/index.ts#L2)*
+*Defined in [index.ts:2](https://github.com/indigo-org/native-theme/blob/1f1a57d/src/index.ts#L2)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **useTheme**: *any*
 
-*Defined in [index.ts:2](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/index.ts#L2)*
+*Defined in [index.ts:2](https://github.com/indigo-org/native-theme/blob/1f1a57d/src/index.ts#L2)*
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **withTheme**: *any*
 
-*Defined in [index.ts:2](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/index.ts#L2)*
+*Defined in [index.ts:2](https://github.com/indigo-org/native-theme/blob/1f1a57d/src/index.ts#L2)*

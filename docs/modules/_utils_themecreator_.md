@@ -14,7 +14,7 @@
 
 ▸ **themeCreator**(`theme`: any): *any*
 
-*Defined in [utils/themeCreator.ts:7](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/themeCreator.ts#L7)*
+*Defined in [utils/themeCreator.ts:7](https://github.com/indigo-org/native-theme/blob/1f1a57d/src/utils/themeCreator.ts#L7)*
 
 **Parameters:**
 

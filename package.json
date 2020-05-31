@@ -64,7 +64,7 @@
     "clean": "rimraf lib && rimraf docs",
     "prepare": "yarn build",
     "lint": "eslint \"./src/**/**.{ts, tsx}\"",
-    "docs": "typedoc --plugin typedoc-plugin-markdown --out docs ",
+    "docs": "typedoc --plugin typedoc-plugin-markdown --out docs --media assets",
     "format": "prettier --write \"./src/**/**.{ts, tsx}\"",
     "format:check": "prettier --list-different \"./src/**/**.{ts, tsx}\"",
     "test": "jest"
