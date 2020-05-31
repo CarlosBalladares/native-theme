@@ -1,6 +1,6 @@
 {
   "name": "native-theme",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Theming utilities for react native and react native web.",
   "repository": "git@github.com:indigo-org/native-theme.git",
   "author": "carlosbf@protonmail.com",
@@ -34,7 +34,6 @@
     "core-js": "^3.6.5",
     "eslint": "^7.1.0",
     "eslint-plugin-react-native": "^3.8.1",
-    "hoist-non-react-statics": "^3.3.2",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "react": "~16.9.0",
@@ -68,5 +67,8 @@
     "format": "prettier --write \"./src/**/**.{ts, tsx}\"",
     "format:check": "prettier --list-different \"./src/**/**.{ts, tsx}\"",
     "test": "jest"
+  },
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.2"
   }
 }

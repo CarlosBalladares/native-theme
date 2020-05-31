@@ -21,7 +21,7 @@
 
 Ƭ **ConsumerProps**: *object*
 
-*Defined in [utils/makeWithTheme.tsx:8](https://github.com/CarlosBalladares/native-theme/blob/f352f73/src/utils/makeWithTheme.tsx#L8)*
+*Defined in [utils/makeWithTheme.tsx:8](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L8)*
 
 #### Type declaration:
 
@@ -35,7 +35,7 @@ ___
 
 Ƭ **ForwardedRefType**: *function | MutableRefObject‹T | null› | null*
 
-*Defined in [utils/makeWithTheme.tsx:4](https://github.com/CarlosBalladares/native-theme/blob/f352f73/src/utils/makeWithTheme.tsx#L4)*
+*Defined in [utils/makeWithTheme.tsx:4](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L4)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 Ƭ **WithThemeHOC**: *function*
 
-*Defined in [utils/makeWithTheme.tsx:13](https://github.com/CarlosBalladares/native-theme/blob/f352f73/src/utils/makeWithTheme.tsx#L13)*
+*Defined in [utils/makeWithTheme.tsx:13](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L13)*
 
 #### Type declaration:
 
@@ -61,7 +61,7 @@ ___
 
 Ƭ **WrappedComponent**: *React.ComponentType‹[ConsumerProps](_utils_makewiththeme_.md#consumerprops)‹T››*
 
-*Defined in [utils/makeWithTheme.tsx:12](https://github.com/CarlosBalladares/native-theme/blob/f352f73/src/utils/makeWithTheme.tsx#L12)*
+*Defined in [utils/makeWithTheme.tsx:12](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L12)*
 
 ## Functions
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **makeWithTheme**<**T**>(`Context`: Context‹T›): *[WithThemeHOC](_utils_makewiththeme_.md#withthemehoc)‹T›*
 
-*Defined in [utils/makeWithTheme.tsx:17](https://github.com/CarlosBalladares/native-theme/blob/f352f73/src/utils/makeWithTheme.tsx#L17)*
+*Defined in [utils/makeWithTheme.tsx:17](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L17)*
 
 **Type parameters:**
 
