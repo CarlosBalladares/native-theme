@@ -1,3 +1,16 @@
 import {themeCreator} from './utils';
-const {ThemeContext, ThemeProvider, useTheme, withTheme} = themeCreator({});
-export {ThemeContext, ThemeProvider, useTheme, withTheme, themeCreator};
+const {
+  ThemeContext,
+  ThemeProvider,
+  useTheme,
+  withTheme,
+  makeUseStyles,
+} = themeCreator({});
+export {
+  ThemeContext,
+  ThemeProvider,
+  useTheme,
+  withTheme,
+  makeUseStyles,
+  themeCreator,
+};
