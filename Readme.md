@@ -13,6 +13,14 @@ A small library that provides a set of utilities to create react native styleshe
 
 ## Usage
 
+### Installation
+```
+$ npm i native-theme
+```
+```
+$ yarn add native-theme
+```
+
 ### useStyles
 
 The `useStyles` hook allows you to create stylesheets and use them as hooks.
