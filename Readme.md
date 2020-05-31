@@ -1,7 +1,8 @@
-<img src="assets/indigonative-theme2.png">
+<img src="assets/cb-native-theme.png">
 <hr/>
 
 <img src="https://github.com/indigo-org/native-theme/workflows/CI/badge.svg">
+<img src="https://img.shields.io/apm/l/@indigo/native-theme">
 
 # @indigo/native-theme
 
@@ -102,3 +103,4 @@ export default withTheme(Comp);
 - unit tests for all core functions
 - Written in typescript
 - Continous integration
+- No dependencies
