@@ -102,4 +102,4 @@ export default withTheme(Comp);
 - unit tests for all core functions
 - Written in typescript
 - Continous integration
-- No dependencies
+- Minimal dependencies
