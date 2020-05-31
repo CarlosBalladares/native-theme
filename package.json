@@ -1,6 +1,6 @@
 {
   "name": "native-theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Theming utilities for react native and react native web.",
   "repository": "git@github.com:indigo-org/native-theme.git",
   "author": "carlosbf@protonmail.com",
