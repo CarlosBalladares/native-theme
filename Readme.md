@@ -4,7 +4,7 @@
 <img src="https://github.com/carlosballadares/native-theme/workflows/CI/badge.svg">
 <img src="https://img.shields.io/apm/l/native-theme">
 
-# @indigo/native-theme
+# native-theme
 
 A small library that provides a set of utilities to create react native stylesheets intuitively, inspired by `react-jss` and `@material-ui/styles`.
 
