@@ -1,7 +1,7 @@
 <img src="assets/cb-native-theme2.png">
 <hr/>
 
-<img src="https://github.com/indigo-org/native-theme/workflows/CI/badge.svg">
+<img src="https://github.com/carlosballadares/native-theme/workflows/CI/badge.svg">
 <img src="https://img.shields.io/apm/l/@indigo/native-theme">
 
 # @indigo/native-theme
