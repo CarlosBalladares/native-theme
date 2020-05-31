@@ -1,4 +1,4 @@
-<img src="./assets/indigonative-theme.svg">
+<img src="./assets/indigonative-theme2.png">
 <hr/>
 
 # @indigo/native-theme
