@@ -1,10 +1,6 @@
 import React from 'react';
 import {StyleSheet, ViewStyle, TextStyle, ImageStyle} from 'react-native';
 
-type StyleDefinitionObject = {
-  [key: string]: ViewStyle | TextStyle | ImageStyle;
-};
-
 type Modify<T, R> = Omit<T, keyof R> & R;
 
 type DynamicViewStyle = Modify<
@@ -32,12 +28,15 @@ type DynamicStyleProperty = (args: any) => unknown;
 
 type StyleDefinitionFunction = (theme: any) => StyleDefinitionObject;
 
+type StyleDefinitionObject = {
+  [key: string]: ViewStyle | TextStyle | ImageStyle;
+};
+
 type StylesDefinitionType = StyleDefinitionObject | StyleDefinitionFunction;
 
 type DynamicStyleDefinitionObject = {
   [key: string]: DynamicViewStyle | DynamicTextStyle | DynamicImageStyle;
 };
-
 type DynamicStyleDefinitionFunction = (
   theme: any,
 ) => DynamicStyleDefinitionObject;
@@ -48,26 +47,22 @@ type DynamicStylesDefinitionType =
 
 type StylesDefinitionArgs = StylesDefinitionType | DynamicStylesDefinitionType;
 
-type UseStylesType = (
-  definition?: StylesDefinitionArgs,
-) => StyleDefinitionObject;
+type UseStylesType = (args?: any) => StyleDefinitionObject;
 
-type MakeUseStylesType = (theme: any) => UseStylesType;
+type MakeUseStylesType = (definition: StylesDefinitionArgs) => UseStylesType;
 
 const computeDynamicStylesFromFunction = (
-  definitions: StyleDefinitionFunction | DynamicStyleDefinitionFunction,
+  definitions:
+    | StyleDefinitionFunction
+    | DynamicStyleDefinitionFunction
+    | Function,
   args: any,
   theme: any,
 ): StyleDefinitionObject => {
-  return Object.fromEntries(
-    Object.entries(definitions(theme)).map((styleEntry: any) => {
-      if (typeof styleEntry[1] === 'function') {
-        return [styleEntry[0], styleEntry[1](args)];
-      } else {
-        return styleEntry;
-      }
-    }),
-  );
+  const computedFromTheme:
+    | StylesDefinitionType
+    | DynamicStylesDefinitionType = definitions(theme);
+  return computeDynamicStylesFromObject(computedFromTheme, args);
 };
 
 const computeDynamicStylesFromObject = (
@@ -75,12 +70,19 @@ const computeDynamicStylesFromObject = (
   args: any,
 ): StyleDefinitionObject => {
   return Object.fromEntries(
-    Object.entries(definitions).map((styleEntry: any) => {
-      if (typeof styleEntry[1] === 'function') {
-        return [styleEntry[0], styleEntry[1](args)];
-      } else {
-        return styleEntry;
-      }
+    Object.entries(definitions).map(([name, style]: any) => {
+      return [
+        name,
+        Object.fromEntries(
+          Object.entries(style).map((rule: any) => {
+            if (typeof rule[1] === 'function') {
+              return [rule[0], rule[1](args)];
+            } else {
+              return rule;
+            }
+          }),
+        ),
+      ];
     }),
   );
 };
@@ -88,6 +90,11 @@ const computeDynamicStylesFromObject = (
 const makeUseStylesFactory = <T extends {}>(
   Context: React.Context<T>,
 ): MakeUseStylesType => {
+  if (Context == null) {
+    throw new Error(
+      'Please provide a valid React Context instance to create a  makeUseStyles instance',
+    );
+  }
   const makeUseStyles = (
     stylesDefinitions: StylesDefinitionArgs,
   ): UseStylesType => {
@@ -100,6 +107,7 @@ const makeUseStylesFactory = <T extends {}>(
             args,
             theme,
           );
+          console.log;
           return StyleSheet.create(computedStyle);
         }, [args, theme]);
       };

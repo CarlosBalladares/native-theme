@@ -33,7 +33,7 @@
 
 Ƭ **DynamicImageStyle**: *[Modify](_utils_makeusestylesfactory_.md#modify)‹ViewStyle, object›*
 
-*Defined in [utils/makeUseStylesFactory.ts:24](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L24)*
+*Defined in [utils/makeUseStylesFactory.ts:20](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L20)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 Ƭ **DynamicStyleDefinitionFunction**: *function*
 
-*Defined in [utils/makeUseStylesFactory.ts:41](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L41)*
+*Defined in [utils/makeUseStylesFactory.ts:40](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L40)*
 
 #### Type declaration:
 
@@ -59,7 +59,7 @@ ___
 
 Ƭ **DynamicStyleDefinitionObject**: *object*
 
-*Defined in [utils/makeUseStylesFactory.ts:37](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L37)*
+*Defined in [utils/makeUseStylesFactory.ts:37](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L37)*
 
 #### Type declaration:
 
@@ -71,7 +71,7 @@ ___
 
 Ƭ **DynamicStyleProperty**: *function*
 
-*Defined in [utils/makeUseStylesFactory.ts:31](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L31)*
+*Defined in [utils/makeUseStylesFactory.ts:27](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L27)*
 
 #### Type declaration:
 
@@ -89,7 +89,7 @@ ___
 
 Ƭ **DynamicStylesDefinitionType**: *[DynamicStyleDefinitionObject](_utils_makeusestylesfactory_.md#dynamicstyledefinitionobject) | [DynamicStyleDefinitionFunction](_utils_makeusestylesfactory_.md#dynamicstyledefinitionfunction)*
 
-*Defined in [utils/makeUseStylesFactory.ts:45](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L45)*
+*Defined in [utils/makeUseStylesFactory.ts:44](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L44)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 Ƭ **DynamicTextStyle**: *[Modify](_utils_makeusestylesfactory_.md#modify)‹ViewStyle, object›*
 
-*Defined in [utils/makeUseStylesFactory.ts:17](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L17)*
+*Defined in [utils/makeUseStylesFactory.ts:13](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L13)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 Ƭ **DynamicViewStyle**: *[Modify](_utils_makeusestylesfactory_.md#modify)‹ViewStyle, object›*
 
-*Defined in [utils/makeUseStylesFactory.ts:10](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L10)*
+*Defined in [utils/makeUseStylesFactory.ts:6](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L6)*
 
 ___
 
@@ -113,17 +113,17 @@ ___
 
 Ƭ **MakeUseStylesType**: *function*
 
-*Defined in [utils/makeUseStylesFactory.ts:55](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L55)*
+*Defined in [utils/makeUseStylesFactory.ts:52](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L52)*
 
 #### Type declaration:
 
-▸ (`theme`: any): *[UseStylesType](_utils_makeusestylesfactory_.md#usestylestype)*
+▸ (`definition`: [StylesDefinitionArgs](_utils_makeusestylesfactory_.md#stylesdefinitionargs)): *[UseStylesType](_utils_makeusestylesfactory_.md#usestylestype)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`theme` | any |
+`definition` | [StylesDefinitionArgs](_utils_makeusestylesfactory_.md#stylesdefinitionargs) |
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 Ƭ **Modify**: *Omit‹T, keyof R› & R*
 
-*Defined in [utils/makeUseStylesFactory.ts:8](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L8)*
+*Defined in [utils/makeUseStylesFactory.ts:4](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L4)*
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 Ƭ **StyleDefinitionFunction**: *function*
 
-*Defined in [utils/makeUseStylesFactory.ts:33](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L33)*
+*Defined in [utils/makeUseStylesFactory.ts:29](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L29)*
 
 #### Type declaration:
 
@@ -157,7 +157,7 @@ ___
 
 Ƭ **StyleDefinitionObject**: *object*
 
-*Defined in [utils/makeUseStylesFactory.ts:4](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L4)*
+*Defined in [utils/makeUseStylesFactory.ts:31](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L31)*
 
 #### Type declaration:
 
@@ -169,7 +169,7 @@ ___
 
 Ƭ **StylesDefinitionArgs**: *[StylesDefinitionType](_utils_makeusestylesfactory_.md#stylesdefinitiontype) | [DynamicStylesDefinitionType](_utils_makeusestylesfactory_.md#dynamicstylesdefinitiontype)*
 
-*Defined in [utils/makeUseStylesFactory.ts:49](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L49)*
+*Defined in [utils/makeUseStylesFactory.ts:48](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L48)*
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 Ƭ **StylesDefinitionType**: *[StyleDefinitionObject](_utils_makeusestylesfactory_.md#styledefinitionobject) | [StyleDefinitionFunction](_utils_makeusestylesfactory_.md#styledefinitionfunction)*
 
-*Defined in [utils/makeUseStylesFactory.ts:35](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L35)*
+*Defined in [utils/makeUseStylesFactory.ts:35](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L35)*
 
 ___
 
@@ -185,31 +185,31 @@ ___
 
 Ƭ **UseStylesType**: *function*
 
-*Defined in [utils/makeUseStylesFactory.ts:51](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L51)*
+*Defined in [utils/makeUseStylesFactory.ts:50](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L50)*
 
 #### Type declaration:
 
-▸ (`definition?`: [StylesDefinitionArgs](_utils_makeusestylesfactory_.md#stylesdefinitionargs)): *[StyleDefinitionObject](_utils_makeusestylesfactory_.md#styledefinitionobject)*
+▸ (`args?`: any): *[StyleDefinitionObject](_utils_makeusestylesfactory_.md#styledefinitionobject)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`definition?` | [StylesDefinitionArgs](_utils_makeusestylesfactory_.md#stylesdefinitionargs) |
+`args?` | any |
 
 ## Functions
 
 ### `Const` computeDynamicStylesFromFunction
 
-▸ **computeDynamicStylesFromFunction**(`definitions`: [StyleDefinitionFunction](_utils_makeusestylesfactory_.md#styledefinitionfunction) | [DynamicStyleDefinitionFunction](_utils_makeusestylesfactory_.md#dynamicstyledefinitionfunction), `args`: any, `theme`: any): *[StyleDefinitionObject](_utils_makeusestylesfactory_.md#styledefinitionobject)*
+▸ **computeDynamicStylesFromFunction**(`definitions`: [StyleDefinitionFunction](_utils_makeusestylesfactory_.md#styledefinitionfunction) | [DynamicStyleDefinitionFunction](_utils_makeusestylesfactory_.md#dynamicstyledefinitionfunction) | Function, `args`: any, `theme`: any): *[StyleDefinitionObject](_utils_makeusestylesfactory_.md#styledefinitionobject)*
 
-*Defined in [utils/makeUseStylesFactory.ts:57](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L57)*
+*Defined in [utils/makeUseStylesFactory.ts:54](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L54)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`definitions` | [StyleDefinitionFunction](_utils_makeusestylesfactory_.md#styledefinitionfunction) &#124; [DynamicStyleDefinitionFunction](_utils_makeusestylesfactory_.md#dynamicstyledefinitionfunction) |
+`definitions` | [StyleDefinitionFunction](_utils_makeusestylesfactory_.md#styledefinitionfunction) &#124; [DynamicStyleDefinitionFunction](_utils_makeusestylesfactory_.md#dynamicstyledefinitionfunction) &#124; Function |
 `args` | any |
 `theme` | any |
 
@@ -221,7 +221,7 @@ ___
 
 ▸ **computeDynamicStylesFromObject**(`definitions`: [StylesDefinitionType](_utils_makeusestylesfactory_.md#stylesdefinitiontype) | [DynamicStylesDefinitionType](_utils_makeusestylesfactory_.md#dynamicstylesdefinitiontype), `args`: any): *[StyleDefinitionObject](_utils_makeusestylesfactory_.md#styledefinitionobject)*
 
-*Defined in [utils/makeUseStylesFactory.ts:73](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L73)*
+*Defined in [utils/makeUseStylesFactory.ts:68](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L68)*
 
 **Parameters:**
 
@@ -238,7 +238,7 @@ ___
 
 ▸ **makeUseStylesFactory**<**T**>(`Context`: Context‹T›): *[MakeUseStylesType](_utils_makeusestylesfactory_.md#makeusestylestype)*
 
-*Defined in [utils/makeUseStylesFactory.ts:88](https://github.com/indigo-org/native-theme/blob/1e03566/src/utils/makeUseStylesFactory.ts#L88)*
+*Defined in [utils/makeUseStylesFactory.ts:90](https://github.com/indigo-org/native-theme/blob/be1f6d8/src/utils/makeUseStylesFactory.ts#L90)*
 
 **Type parameters:**
 

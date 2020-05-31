@@ -6,7 +6,7 @@ import {makeUseStylesFactory} from './makeUseStylesFactory';
 
 const themeCreator = (theme: any): any => {
   const ThemeContext = React.createContext(theme);
-  const ThemeProvider = makeProvider(theme, ThemeContext);
+  const ThemeProvider = makeProvider(ThemeContext, theme);
   const useTheme = makeUseTheme(ThemeContext);
   const withTheme = makeWithTheme(ThemeContext);
   const makeUseStyles = makeUseStylesFactory(ThemeContext);
