@@ -18,7 +18,7 @@
 
 Ƭ **useThemeType**: *function*
 
-*Defined in [utils/makeUseTheme.ts:8](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeUseTheme.ts#L8)*
+*Defined in [utils/makeUseTheme.ts:8](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeUseTheme.ts#L8)*
 
 #### Type declaration:
 
@@ -30,7 +30,7 @@
 
 ▸ **makeUseTheme**<**T**>(`Context`: Context‹T›): *[useThemeType](_utils_makeusetheme_.md#usethemetype)‹T›*
 
-*Defined in [utils/makeUseTheme.ts:10](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeUseTheme.ts#L10)*
+*Defined in [utils/makeUseTheme.ts:10](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeUseTheme.ts#L10)*
 
 **Type parameters:**
 

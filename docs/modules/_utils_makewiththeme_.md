@@ -21,7 +21,7 @@
 
 Ƭ **ConsumerProps**: *object*
 
-*Defined in [utils/makeWithTheme.tsx:8](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L8)*
+*Defined in [utils/makeWithTheme.tsx:9](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L9)*
 
 #### Type declaration:
 
@@ -35,7 +35,7 @@ ___
 
 Ƭ **ForwardedRefType**: *function | MutableRefObject‹T | null› | null*
 
-*Defined in [utils/makeWithTheme.tsx:4](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L4)*
+*Defined in [utils/makeWithTheme.tsx:5](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L5)*
 
 ___
 
@@ -43,17 +43,18 @@ ___
 
 Ƭ **WithThemeHOC**: *function*
 
-*Defined in [utils/makeWithTheme.tsx:13](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L13)*
+*Defined in [utils/makeWithTheme.tsx:14](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L14)*
 
 #### Type declaration:
 
-▸ (`Component`: [WrappedComponent](_utils_makewiththeme_.md#wrappedcomponent)‹T›): *React.ComponentType‹any›*
+▸ (`Component`: [WrappedComponent](_utils_makewiththeme_.md#wrappedcomponent)‹T›, `injectedTheme`: T): *React.ComponentType‹any›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `Component` | [WrappedComponent](_utils_makewiththeme_.md#wrappedcomponent)‹T› |
+`injectedTheme` | T |
 
 ___
 
@@ -61,7 +62,7 @@ ___
 
 Ƭ **WrappedComponent**: *React.ComponentType‹[ConsumerProps](_utils_makewiththeme_.md#consumerprops)‹T››*
 
-*Defined in [utils/makeWithTheme.tsx:12](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L12)*
+*Defined in [utils/makeWithTheme.tsx:13](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L13)*
 
 ## Functions
 
@@ -69,7 +70,7 @@ ___
 
 ▸ **makeWithTheme**<**T**>(`Context`: Context‹T›): *[WithThemeHOC](_utils_makewiththeme_.md#withthemehoc)‹T›*
 
-*Defined in [utils/makeWithTheme.tsx:17](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeWithTheme.tsx#L17)*
+*Defined in [utils/makeWithTheme.tsx:19](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L19)*
 
 **Type parameters:**
 

@@ -14,7 +14,7 @@
 
 ▸ **themeCreator**(`theme`: any): *any*
 
-*Defined in [utils/themeCreator.ts:7](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/themeCreator.ts#L7)*
+*Defined in [utils/themeCreator.ts:7](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/themeCreator.ts#L7)*
 
 **Parameters:**
 

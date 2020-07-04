@@ -22,7 +22,7 @@
 
 Ƭ **ProviderType**: *React.SFC‹[ProviderProps](../interfaces/_utils_makeprovider_.providerprops.md)‹T››*
 
-*Defined in [utils/makeProvider.tsx:13](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeProvider.tsx#L13)*
+*Defined in [utils/makeProvider.tsx:13](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeProvider.tsx#L13)*
 
 ## Functions
 
@@ -30,7 +30,7 @@
 
 ▸ **makeProvider**<**T**>(`Context`: Context‹T›, `initialTheme`: T): *[ProviderType](_utils_makeprovider_.md#providertype)‹T›*
 
-*Defined in [utils/makeProvider.tsx:16](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/utils/makeProvider.tsx#L16)*
+*Defined in [utils/makeProvider.tsx:16](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeProvider.tsx#L16)*
 
 **Type parameters:**
 

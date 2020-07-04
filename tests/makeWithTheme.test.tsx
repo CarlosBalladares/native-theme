@@ -31,3 +31,22 @@ test('Make use theme generates a valid useTheme hook', () => {
   const el2 = component2.root.findByType(Text);
   expect(el2.props.style).toStrictEqual({color: 'red'});
 });
+
+test('Test theme injection', () => {
+  const withTheme = makeWithTheme(Context);
+
+  const Comp = function ({theme}) {
+    return (
+      <View>
+        <Text style={{color: theme.typography.color}}>
+          {JSON.stringify(theme)}
+        </Text>
+      </View>
+    );
+  };
+  const EnhancedComp = withTheme(Comp, {typography: {color: 'green'}});
+  const component = renderer.create(<EnhancedComp />);
+
+  const el = component.root.findByType(Text);
+  expect(el.props.style).toStrictEqual({color: 'green'});
+});
