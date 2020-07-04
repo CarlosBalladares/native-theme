@@ -1,34 +1,53 @@
 import hoistNonReactStatics from 'hoist-non-react-statics';
+import {makeProvider} from './makeProvider';
 import React from 'react';
 
-type ForwardedRefType<T> =
-  | ((instance: T | null) => void)
-  | React.MutableRefObject<T | null>
+import type {Theme} from '../types';
+
+type ForwardedRefType<Theme> =
+  | ((instance: Theme | null) => void)
+  | React.MutableRefObject<Theme | null>
   | null;
-type ConsumerProps<T> = {
-  theme: T;
+type ConsumerProps<Theme> = {
+  theme: Theme;
   ref: ForwardedRefType<any>;
 };
-type WrappedComponent<T> = React.ComponentType<ConsumerProps<T>>;
-type WithThemeHOC<T> = (
-  Component: WrappedComponent<T>,
+type WrappedComponent<Theme> = React.ComponentType<ConsumerProps<Theme>>;
+type WithThemeHOC<Theme> = (
+  Component: WrappedComponent<Theme>,
+  injectedTheme?: Theme,
 ) => React.ComponentType<any>;
 
-const makeWithTheme = <T extends {}>(
-  Context: React.Context<T>,
-): WithThemeHOC<T> => {
-  return (Component: WrappedComponent<T>): React.ComponentType<any> => {
+const makeWithTheme = <Theme extends {}>(
+  Context: React.Context<Theme>,
+): WithThemeHOC<Theme> => {
+  return (Component, injectedTheme): React.ComponentType<any> => {
     const Temp: React.SFC<{
       fwdRef: ForwardedRefType<any>;
-    }> = (props) => {
+    }> = (props: any) => {
       const {fwdRef, ...rest} = props;
-      return (
-        <Context.Consumer>
-          {(theme: T) => <Component ref={fwdRef} {...rest} theme={theme} />}
-        </Context.Consumer>
-      );
+      if (injectedTheme == null) {
+        return (
+          <Context.Consumer>
+            {(theme: Theme) => (
+              <Component ref={fwdRef} {...rest} theme={theme} />
+            )}
+          </Context.Consumer>
+        );
+      } else {
+        const NextProvider = makeProvider(Context, injectedTheme);
+        return (
+          <NextProvider>
+            <Context.Consumer>
+              {(newInjectedTheme: Theme) => (
+                <Component ref={fwdRef} {...rest} theme={newInjectedTheme} />
+              )}
+            </Context.Consumer>
+          </NextProvider>
+        );
+      }
     };
-    const FwdRef = React.forwardRef<any>((props, ref) => {
+    const FwdRef = React.forwardRef<any>((props: any, ref: any) => {
       return <Temp {...props} fwdRef={ref} />;
     });
     FwdRef.displayName = `withTheme(${Component.displayName})`;

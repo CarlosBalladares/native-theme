@@ -18,7 +18,7 @@
 
 Ƭ **Theme_T**: *object*
 
-*Defined in [constants/defaultTheme.ts:7](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/constants/defaultTheme.ts#L7)*
+*Defined in [constants/defaultTheme.ts:7](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/constants/defaultTheme.ts#L7)*
 
 **`description`** Declares the default theme and type for the library.
 As default we use an empty object
@@ -35,4 +35,4 @@ As default we use an empty object
 
 • **defaultTheme**: *[Theme_T](_constants_defaulttheme_.md#theme_t)*
 
-*Defined in [constants/defaultTheme.ts:11](https://github.com/CarlosBalladares/native-theme/blob/e0000cc/src/constants/defaultTheme.ts#L11)*
+*Defined in [constants/defaultTheme.ts:11](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/constants/defaultTheme.ts#L11)*
