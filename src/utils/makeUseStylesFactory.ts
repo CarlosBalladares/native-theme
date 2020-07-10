@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, ViewStyle, TextStyle, ImageStyle} from 'react-native';
+import hash from 'object-hash';
 
 type Modify<T, R> = Omit<T, keyof R> & R;
 
@@ -51,6 +52,8 @@ type UseStylesType = (args?: any) => StyleDefinitionObject;
 
 type MakeUseStylesType = (definition: StylesDefinitionArgs) => UseStylesType;
 
+const StylesheetManager = new WeakMap();
+
 const computeDynamicStylesFromFunction = (
   definitions:
     | StyleDefinitionFunction
@@ -101,15 +104,52 @@ const makeUseStylesFactory = <T extends {}>(
     if (typeof stylesDefinitions === 'function') {
       return (args?: any): StyleDefinitionObject => {
         const theme = React.useContext(Context);
+
+        let themeHash: string;
+
+        if (!StylesheetManager.has(theme)) {
+          const temp = hash(theme);
+          StylesheetManager.set(theme, temp);
+          themeHash = temp;
+        } else {
+          themeHash = StylesheetManager.get(theme);
+        }
+
+        let argsHash: string;
+
+        if (!StylesheetManager.has(args)) {
+          const temp = hash(args);
+          StylesheetManager.set(args, temp);
+          argsHash = temp;
+        } else {
+          argsHash = StylesheetManager.get(args);
+        }
+
+        console.log('themeHash', themeHash);
+        console.log('argsHash', argsHash);
+
         return React.useMemo(() => {
-          const computedStyle = computeDynamicStylesFromFunction(
-            stylesDefinitions,
-            args,
-            theme,
-          );
-          console.log;
-          return StyleSheet.create(computedStyle);
-        }, [args, theme]);
+          let styleSheet: any;
+
+          if (!StylesheetManager.has({themeHash, argsHash})) {
+            console.log('had');
+            const computedStyle = computeDynamicStylesFromFunction(
+              stylesDefinitions,
+              args,
+              theme,
+            );
+
+            const temp = StyleSheet.create(computedStyle);
+            StylesheetManager.set({themeHash, argsHash}, temp);
+            styleSheet = temp;
+          } else {
+            console.log('hadnot');
+
+            styleSheet = StylesheetManager.get({themeHash, argsHash});
+          }
+          console.log('styleSheet', styleSheet);
+          return styleSheet;
+        }, [args, theme, themeHash, argsHash]);
       };
     } else if (typeof stylesDefinitions === 'object') {
       return (args?: any): StyleDefinitionObject => {
