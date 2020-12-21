@@ -1,4 +1,4 @@
-[native-theme](../README.md) › [Globals](../globals.md) › ["utils/makeProvider"](../modules/_utils_makeprovider_.md) › [ProviderProps](_utils_makeprovider_.providerprops.md)
+[native-theme-test](../README.md) › [Globals](../globals.md) › ["utils/makeProvider"](../modules/_utils_makeprovider_.md) › [ProviderProps](_utils_makeprovider_.providerprops.md)
 
 # Interface: ProviderProps <**T**>
 
@@ -23,7 +23,7 @@
 
 • **children**: *React.ReactNode*
 
-*Defined in [utils/makeProvider.tsx:10](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeProvider.tsx#L10)*
+*Defined in [utils/makeProvider.tsx:10](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/utils/makeProvider.tsx#L10)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **theme**? : *T*
 
-*Defined in [utils/makeProvider.tsx:11](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeProvider.tsx#L11)*
+*Defined in [utils/makeProvider.tsx:11](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/utils/makeProvider.tsx#L11)*

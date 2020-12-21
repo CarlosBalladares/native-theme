@@ -1,4 +1,4 @@
-[native-theme](../README.md) › [Globals](../globals.md) › ["utils/makeWithTheme"](_utils_makewiththeme_.md)
+[native-theme-test](../README.md) › [Globals](../globals.md) › ["utils/makeWithTheme"](_utils_makewiththeme_.md)
 
 # Module: "utils/makeWithTheme"
 
@@ -21,21 +21,21 @@
 
 Ƭ **ConsumerProps**: *object*
 
-*Defined in [utils/makeWithTheme.tsx:9](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L9)*
+*Defined in [utils/makeWithTheme.tsx:11](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/utils/makeWithTheme.tsx#L11)*
 
 #### Type declaration:
 
 * **ref**: *[ForwardedRefType](_utils_makewiththeme_.md#forwardedreftype)‹any›*
 
-* **theme**: *T*
+* **theme**: *Theme*
 
 ___
 
 ###  ForwardedRefType
 
-Ƭ **ForwardedRefType**: *function | MutableRefObject‹T | null› | null*
+Ƭ **ForwardedRefType**: *function | MutableRefObject‹Theme | null› | null*
 
-*Defined in [utils/makeWithTheme.tsx:5](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L5)*
+*Defined in [utils/makeWithTheme.tsx:7](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/utils/makeWithTheme.tsx#L7)*
 
 ___
 
@@ -43,43 +43,43 @@ ___
 
 Ƭ **WithThemeHOC**: *function*
 
-*Defined in [utils/makeWithTheme.tsx:14](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L14)*
+*Defined in [utils/makeWithTheme.tsx:16](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/utils/makeWithTheme.tsx#L16)*
 
 #### Type declaration:
 
-▸ (`Component`: [WrappedComponent](_utils_makewiththeme_.md#wrappedcomponent)‹T›, `injectedTheme`: T): *React.ComponentType‹any›*
+▸ (`Component`: [WrappedComponent](_utils_makewiththeme_.md#wrappedcomponent)‹Theme›, `injectedTheme?`: Theme): *React.ComponentType‹any›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`Component` | [WrappedComponent](_utils_makewiththeme_.md#wrappedcomponent)‹T› |
-`injectedTheme` | T |
+`Component` | [WrappedComponent](_utils_makewiththeme_.md#wrappedcomponent)‹Theme› |
+`injectedTheme?` | Theme |
 
 ___
 
 ###  WrappedComponent
 
-Ƭ **WrappedComponent**: *React.ComponentType‹[ConsumerProps](_utils_makewiththeme_.md#consumerprops)‹T››*
+Ƭ **WrappedComponent**: *React.ComponentType‹[ConsumerProps](_utils_makewiththeme_.md#consumerprops)‹Theme››*
 
-*Defined in [utils/makeWithTheme.tsx:13](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L13)*
+*Defined in [utils/makeWithTheme.tsx:15](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/utils/makeWithTheme.tsx#L15)*
 
 ## Functions
 
 ### `Const` makeWithTheme
 
-▸ **makeWithTheme**<**T**>(`Context`: Context‹T›): *[WithThemeHOC](_utils_makewiththeme_.md#withthemehoc)‹T›*
+▸ **makeWithTheme**<**Theme**>(`Context`: Context‹Theme›): *[WithThemeHOC](_utils_makewiththeme_.md#withthemehoc)‹Theme›*
 
-*Defined in [utils/makeWithTheme.tsx:19](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/makeWithTheme.tsx#L19)*
+*Defined in [utils/makeWithTheme.tsx:21](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/utils/makeWithTheme.tsx#L21)*
 
 **Type parameters:**
 
-▪ **T**: *object*
+▪ **Theme**: *object*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`Context` | Context‹T› |
+`Context` | Context‹Theme› |
 
-**Returns:** *[WithThemeHOC](_utils_makewiththeme_.md#withthemehoc)‹T›*
+**Returns:** *[WithThemeHOC](_utils_makewiththeme_.md#withthemehoc)‹Theme›*
