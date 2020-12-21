@@ -1,8 +1,8 @@
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import {makeProvider} from './makeProvider';
 import React from 'react';
-
-import type {Theme} from '../types';
+import {deepMerge} from './deepMerge';
+import {isCyclic} from './isCyclic';
 
 type ForwardedRefType<Theme> =
   | ((instance: Theme | null) => void)
@@ -22,7 +22,7 @@ const makeWithTheme = <Theme extends {}>(
   Context: React.Context<Theme>,
 ): WithThemeHOC<Theme> => {
   return (Component, injectedTheme): React.ComponentType<any> => {
-    const Temp: React.SFC<{
+    const Temp: React.FunctionComponent<{
       fwdRef: ForwardedRefType<any>;
     }> = (props: any) => {
       const {fwdRef, ...rest} = props;
@@ -35,15 +35,29 @@ const makeWithTheme = <Theme extends {}>(
           </Context.Consumer>
         );
       } else {
+        if (isCyclic(injectedTheme)) {
+          throw new Error(
+            'NATIVE THEME - Theme Overrides cannot be cyclic objects.',
+          );
+        }
+
         const NextProvider = makeProvider(Context, injectedTheme);
         return (
-          <NextProvider>
-            <Context.Consumer>
-              {(newInjectedTheme: Theme) => (
-                <Component ref={fwdRef} {...rest} theme={newInjectedTheme} />
-              )}
-            </Context.Consumer>
-          </NextProvider>
+          <Context.Consumer>
+            {(theme: Theme) => (
+              <NextProvider>
+                <Context.Consumer>
+                  {(newInjectedTheme: Theme) => (
+                    <Component
+                      ref={fwdRef}
+                      {...rest}
+                      theme={deepMerge(theme, newInjectedTheme)}
+                    />
+                  )}
+                </Context.Consumer>
+              </NextProvider>
+            )}
+          </Context.Consumer>
         );
       }
     };

@@ -7,5 +7,6 @@ module.exports = {
   // Eslint throw an no-undef error when exporting interfaces and types
   rules: {
     'no-undef': 'off',
+    eqeqeq: 'off',
   },
 };

@@ -1,4 +1,4 @@
-[native-theme](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
+[native-theme-test](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
 
 # Module: "index"
 
@@ -18,7 +18,7 @@
 
 • **ThemeContext**: *any*
 
-*Defined in [index.ts:3](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/index.ts#L3)*
+*Defined in [index.ts:3](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/index.ts#L3)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **ThemeProvider**: *any*
 
-*Defined in [index.ts:4](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/index.ts#L4)*
+*Defined in [index.ts:4](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/index.ts#L4)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **makeUseStyles**: *any*
 
-*Defined in [index.ts:7](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/index.ts#L7)*
+*Defined in [index.ts:7](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/index.ts#L7)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **useTheme**: *any*
 
-*Defined in [index.ts:5](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/index.ts#L5)*
+*Defined in [index.ts:5](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/index.ts#L5)*
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **withTheme**: *any*
 
-*Defined in [index.ts:6](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/index.ts#L6)*
+*Defined in [index.ts:6](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/index.ts#L6)*

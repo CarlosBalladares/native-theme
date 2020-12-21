@@ -1,4 +1,4 @@
-[native-theme](../README.md) › [Globals](../globals.md) › ["utils/themeCreator"](_utils_themecreator_.md)
+[native-theme-test](../README.md) › [Globals](../globals.md) › ["utils/themeCreator"](_utils_themecreator_.md)
 
 # Module: "utils/themeCreator"
 
@@ -14,7 +14,7 @@
 
 ▸ **themeCreator**(`theme`: any): *any*
 
-*Defined in [utils/themeCreator.ts:7](https://github.com/CarlosBalladares/native-theme/blob/40cd711/src/utils/themeCreator.ts#L7)*
+*Defined in [utils/themeCreator.ts:7](https://github.com/CarlosBalladares/native-theme/blob/70169e3/src/utils/themeCreator.ts#L7)*
 
 **Parameters:**
 

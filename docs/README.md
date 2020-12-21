@@ -1,11 +1,11 @@
-[native-theme](README.md) › [Globals](globals.md)
+[native-theme-test](README.md) › [Globals](globals.md)
 
-# native-theme
+# native-theme-test
 
 <img src="https://raw.githubusercontent.com/CarlosBalladares/native-theme/master/assets/cb-native-theme2.png?token=ADRAE2G4MBHKDEGSP27B2ZC63UWOU">
 <hr/>
 
-<img src="https://github.com/carlosballadares/native-theme/workflows/CI/badge.svg"><img src="https://img.shields.io/apm/l/native-theme">
+<img src="https://github.com/carlosballadares/native-theme/workflows/CI/badge.svg"><img src="https://img.shields.io/npm/l/native-theme">
 
 # native-theme
 
@@ -16,6 +16,14 @@ A small library that provides a set of utilities to create react native styleshe
 `native-theme` makes writting `react-native` stylesheets intuitive by providing familiar `useStyles` syntax from `react-jss` and a set of theming primitives that can be applied to any `react-native` project.
 
 ## Usage
+
+### Installation
+```
+$ npm i native-theme
+```
+```
+$ yarn add native-theme
+```
 
 ### useStyles
 
@@ -106,4 +114,4 @@ export default withTheme(Comp);
 - unit tests for all core functions
 - Written in typescript
 - Continous integration
-- No dependencies
+- Minimal dependencies

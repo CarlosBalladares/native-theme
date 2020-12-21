@@ -1,4 +1,4 @@
-[native-theme](../README.md) › [Globals](../globals.md) › ["utils/index"](_utils_index_.md)
+[native-theme-test](../README.md) › [Globals](../globals.md) › ["utils/index"](_utils_index_.md)
 
 # Module: "utils/index"
 

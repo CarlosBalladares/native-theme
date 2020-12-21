@@ -1,4 +1,4 @@
-[native-theme](../README.md) › [Globals](../globals.md) › ["constants/index"](_constants_index_.md)
+[native-theme-test](../README.md) › [Globals](../globals.md) › ["constants/index"](_constants_index_.md)
 
 # Module: "constants/index"
 
